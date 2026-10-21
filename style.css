@@ -1,0 +1,144 @@
+/* Reseta estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+}
+
+/* Cabeçalho e Navegação */
+.header-container {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #f39c12;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #34495e;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Seções de Conteúdo */
+.content-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #f39c12;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.content-section p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.highlight-bg {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Cards Grid */
+.cards-grid, .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card, .tip-box {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #f39c12;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.highlight-bg .tip-box {
+    background: #f8f9fa;
+}
+
+.card h3, .tip-box h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+/* Listas */
+ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Rodapé */
+.footer-container {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
